@@ -1,0 +1,3 @@
+org.springframework.cloud.contract.verifier.converter.StubGenerator=\
+com.ascendcorp.contract.converter.MountebankConverter
+
