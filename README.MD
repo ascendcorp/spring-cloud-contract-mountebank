@@ -2,7 +2,7 @@
 
 [![Apache 2.0](https://img.shields.io/github/license/micrometer-metrics/micrometer.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
-Spring Cloud Contract Mountebank is extension plug-in for Spring Cloud Contract Maven Plugin (https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract-maven-plugin). The implementation base on Pluggable Architecture guide (https://cloud.spring.io/spring-cloud-contract/2.1.x/multi/multi__using_the_pluggable_architecture.html) and some example code from (https://github.com/spring-cloud/spring-cloud-contract/tree/master/spring-cloud-contract-tools)
+Spring Cloud Contract Mountebank is extension plug-in for Spring Cloud Contract https://spring.io/projects/spring-cloud-contract). The implementation base on Pluggable Architecture guide (https://docs.spring.io/spring-cloud-contract/docs/2.2.4.RELEASE/reference/html/advanced.html#customization-pluggable-architecture) and some example code from (https://github.com/spring-cloud/spring-cloud-contract/tree/master/spring-cloud-contract-tools)
 
 Mountebank (http://www.mbtest.org/) is lightweight stub framework. Stub is created from predicates .ejs file, so this plug-in help to convert DSL groovy contract to Mountebank's predicates file. You can use output predicates files to create Mountebank stub instantly.
 
@@ -12,7 +12,7 @@ by default, Mountebank's predicates files were generated in ***target/stubs/META
 
 ## Pre-Requisite
 
-Your application is implemented Spring Cloud Contract as producer side. 
+Your application is implemented Spring Cloud Contract as producer side. You can use either Gradle or Maven plugins. Below you can find an example for Maven.
 
 ## Add library to Spring Cloud Contract Maven Plugin dependency
 
@@ -20,7 +20,7 @@ Your application is implemented Spring Cloud Contract as producer side.
 <plugin>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-contract-maven-plugin</artifactId>
-    <version>2.1.1.RELEASE</version>
+    <version>${spring-cloud-contract.version}</version>
     <extensions>true</extensions>
     <configuration>
         <packageWithBaseClasses>your.package.base.class</packageWithBaseClasses>
