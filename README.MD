@@ -1,4 +1,4 @@
-# Spring Rest Docs AMQP
+# Spring Cloud Contract for Mountebank
 
 [![Apache 2.0](https://img.shields.io/github/license/micrometer-metrics/micrometer.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
